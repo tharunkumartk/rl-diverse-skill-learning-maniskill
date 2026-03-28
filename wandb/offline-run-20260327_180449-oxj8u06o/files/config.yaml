@@ -1,0 +1,247 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    code_path: code/examples/baselines/experimental/sac_moe/sac_moe.py
+    python_version: 3.11.15
+    cli_version: 0.25.1
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1774649089
+    t:
+      1:
+      - 1
+      - 49
+      2:
+      - 1
+      - 49
+      3:
+      - 4
+      - 13
+      - 15
+      - 16
+      - 42
+      - 61
+      4: 3.11.15
+      5: 0.25.1
+      13: linux-x86_64
+    e:
+      730ukzd3q5888grqkjth0oilji9uzi3c:
+        os: Linux-5.14.0-570.73.1.el9_6.x86_64-x86_64-with-glibc2.34
+        python: CPython 3.11.15
+        started_at: '2026-03-27T22:04:49.089907Z'
+        args:
+        - --env_id=PickCube-v1
+        - --num_envs=32
+        - --utd=0.5
+        - --buffer_size=500_000
+        - --total_timesteps=1_000_000
+        - --eval_freq=50_000
+        - --control-mode=pd_ee_delta_pos
+        - --no-capture_video
+        - --disc_coeff=0.1
+        - --intrinsic_reward_coeff=0.05
+        - --exp-name=sac_moe-PickCube-diayn
+        - --track
+        program: /home/tt6444/maniskill/examples/baselines/experimental/sac_moe/sac_moe.py
+        code_path: examples/baselines/experimental/sac_moe/sac_moe.py
+        code_path_local: examples/baselines/experimental/sac_moe/sac_moe.py
+        git:
+          remote_url: https://github.com/haosulab/maniskill
+          commit: d80a0eceb23c70d62682192aa8dde566cd973044
+        root: /home/tt6444/maniskill
+        host: adroit-vis.princeton.edu
+        executable: /home/tt6444/maniskill/.venv/bin/python3
+        cpu_count: 64
+        cpu_count_logical: 64
+        gpu_type: NVIDIA A100 80GB PCIe
+        gpu_count: 2
+        disk:
+          /:
+            total: '104790491136'
+            used: '81746673664'
+        memory:
+          total: '539848286208'
+        gpu_nvidia:
+        - name: NVIDIA A100 80GB PCIe
+          memory_total: '85899345920'
+          cuda_cores: 6912
+          architecture: Ampere
+          uuid: GPU-0158789c-3632-da9f-33e6-038d1d003e50
+        - name: NVIDIA A100 80GB PCIe
+          memory_total: '85899345920'
+          cuda_cores: 6912
+          architecture: Ampere
+          uuid: GPU-119a479d-9194-ddc9-98fc-52fc9d707a6b
+        cuda_version: '13.0'
+        writer_id: 730ukzd3q5888grqkjth0oilji9uzi3c
+exp_name:
+  desc: null
+  value: sac_moe-PickCube-diayn
+seed:
+  desc: null
+  value: 1
+torch_deterministic:
+  desc: null
+  value: true
+cuda:
+  desc: null
+  value: true
+track:
+  desc: null
+  value: true
+wandb_project_name:
+  desc: null
+  value: ManiSkill
+wandb_entity:
+  desc: null
+  value: null
+wandb_group:
+  desc: null
+  value: SAC_MOE
+capture_video:
+  desc: null
+  value: false
+save_trajectory:
+  desc: null
+  value: false
+save_model:
+  desc: null
+  value: true
+evaluate:
+  desc: null
+  value: false
+checkpoint:
+  desc: null
+  value: null
+log_freq:
+  desc: null
+  value: 1000
+env_id:
+  desc: null
+  value: PickCube-v1
+env_vectorization:
+  desc: null
+  value: gpu
+num_envs:
+  desc: null
+  value: 32
+num_eval_envs:
+  desc: null
+  value: 16
+partial_reset:
+  desc: null
+  value: false
+eval_partial_reset:
+  desc: null
+  value: false
+num_steps:
+  desc: null
+  value: 150
+num_eval_steps:
+  desc: null
+  value: 150
+reconfiguration_freq:
+  desc: null
+  value: null
+eval_reconfiguration_freq:
+  desc: null
+  value: 1
+eval_freq:
+  desc: null
+  value: 50000
+save_train_video_freq:
+  desc: null
+  value: null
+control_mode:
+  desc: null
+  value: pd_ee_delta_pos
+total_timesteps:
+  desc: null
+  value: 1000000
+buffer_size:
+  desc: null
+  value: 500000
+buffer_device:
+  desc: null
+  value: cuda
+gamma:
+  desc: null
+  value: 0.8
+tau:
+  desc: null
+  value: 0.01
+batch_size:
+  desc: null
+  value: 1024
+learning_starts:
+  desc: null
+  value: 4000
+policy_lr:
+  desc: null
+  value: 0.0003
+q_lr:
+  desc: null
+  value: 0.0003
+policy_frequency:
+  desc: null
+  value: 1
+target_network_frequency:
+  desc: null
+  value: 1
+alpha:
+  desc: null
+  value: 0.2
+autotune:
+  desc: null
+  value: true
+training_freq:
+  desc: null
+  value: 64
+utd:
+  desc: null
+  value: 0.5
+bootstrap_at_done:
+  desc: null
+  value: always
+disc_coeff:
+  desc: null
+  value: 0.1
+intrinsic_reward_coeff:
+  desc: null
+  value: 0.05
+disc_lr:
+  desc: null
+  value: 0.0003
+grad_steps_per_iteration:
+  desc: null
+  value: 32
+steps_per_env:
+  desc: null
+  value: 2
+env_cfg:
+  desc: null
+  value:
+    obs_mode: state
+    render_mode: rgb_array
+    sim_backend: gpu
+    control_mode: pd_ee_delta_pos
+    num_envs: 32
+    env_id: PickCube-v1
+    reward_mode: normalized_dense
+    env_horizon: 50
+    partial_reset: false
+eval_env_cfg:
+  desc: null
+  value:
+    obs_mode: state
+    render_mode: rgb_array
+    sim_backend: gpu
+    control_mode: pd_ee_delta_pos
+    num_envs: 16
+    env_id: PickCube-v1
+    reward_mode: normalized_dense
+    env_horizon: 50
+    partial_reset: false
